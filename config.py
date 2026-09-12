@@ -5,7 +5,7 @@ from dataclasses import dataclass
 
 with open(Path(__file__).parent / "pyproject.toml", "rb") as f:
     _pyproject = tomllib.load(f)
-    _version = _pyproject.get("project", {}).get("version", "1.0.0")
+    _version = _pyproject.get("project", {}).get("version", "4.0.01")
 
 @dataclass
 class Settings:
